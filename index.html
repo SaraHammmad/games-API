@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-image"></div>
+
+    <!-- Navbar -->
+    <nav class="container navbar navbar-expand-lg navbar-light bg-blue sticky-top shadow">
+        <div class="container">
+            <h5 class="navbar-brand mb-0 text-uppercase">
+                <img src="./images/logo-sm.png" alt="logo photo" style="max-width: 40px"> Game Reviews
+            </h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="shooterLink">Shooter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="mmorpgLink">MMORPG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="sailingLink">Sailing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="permadeathLink">Permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="superheroLink">Superhero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="pixelLink">Pixel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <div class="container mt-4">
+        <div id="gamesSection" class="section active-section">
+            <h2>Games</h2>
+            <div id="gamesList" class="row"></div>
+        </div>
+        <div id="detailsSection" class="section">
+            <h2>Game Details</h2>
+            <div id="gameDetails"></div>
+            <button class="btn btn-primary mt-3" onclick="UI.goBack()">Back to Games</button>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
